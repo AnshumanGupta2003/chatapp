@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="{% static 'assets/css/chat.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Chat Room</h1>
+    </header>
+
+    <!-- Chat Container -->
+    <div class="chat-container">
+        <div class="messages" id="messages">
+            <!-- Messages will be dynamically loaded here -->
+        </div>
+        <form id="chat-form">
+            <input type="text" id="message-input" placeholder="Type your message here..." autocomplete="off" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Chat Room. All rights reserved.</p>
+    </footer>
+
+    <script src="{% static 'chat.js' %}"></script>
+</body>
+</html>

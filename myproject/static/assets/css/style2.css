@@ -1,0 +1,44 @@
+body{
+    background-color: lightslategray;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333; /* Change the color as needed */
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the <p> elements */
+  p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  /* Style for the input fields */
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for the submit button */
+  input[type="submit"] {
+    background-color: #4caf50; /* Green */
+    color: white;
+    cursor: pointer;
+  }
+/* Change the background color on hover */
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green */
+  }
+  
+  /* Center the form */
+  form {
+    width: 300px;
+    margin: 0 auto;
+  }
+    

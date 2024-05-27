@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1> 
+        plz sign up here
+    </h1>
+    {% for message in messages %}
+     {{message}}
+    {% endfor %}
+    <form action="signup" method="POST">
+        {% csrf_token %}
+        <p> Username: </p>
+        <input type="text" name = "username" required>
+        
+        <p> Email: </p>
+        <input type="email" name = "email" required>
+        
+        <p> Password: </p>
+        <input type="Password" name = "password" required>
+        
+        <p> Re-enter password: </p>
+        <input type="password" name = "password2" required>
+    
+        <input type="submit">
+    </form>
+</body>
+</html>
